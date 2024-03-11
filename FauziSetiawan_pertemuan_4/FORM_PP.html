@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <title>Formulit PP</title>
+</head>
+<body>
+    <style>
+    input[type=text] {
+    box-sizing: border-box;
+    width: 80%;
+    padding: 10px 5px;
+    margin-top: 15px;
+    margin-left: 47px;
+    border-radius: 5px;
+    }
+    input[type=email] {
+    box-sizing: border-box;
+    width: 80%;
+    padding: 10px 5px;
+    margin-top: 15px;
+    margin-left: 100px;
+    border-radius: 5px;
+    }
+    input[type=date] {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 8px 0;
+    padding: 8px 5px;
+    border-radius: 5px;
+    margin-left: 53px;
+    }
+    select {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 8px 0;
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin-left: 50px;
+    }
+    textarea {
+    padding: 2px;
+    line-height: 1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    } 
+
+    </style>
+    <center>
+    <h1>PEMUDA PETUALANG SRILANGKA</h1>
+    <img src="OIP.jpg" alt="404" ></center>
+    </center>
+    
+    <form target="_self">
+     <fieldset>
+      <legend style= padding:10px>Data Diri:</legend>
+      <label for="fname">Nama lengkap: </label>
+      <input type="text" id="fname" name="fname" required><br><br>
+      <label for="birthday">Tanggal lahir: </label>
+      <input type="date" id="birthday" name="birthday" required><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+      <label for="jk">Jenis kelamin: </label>
+      <select name="jk" id="jk" required>
+        <option value="L">Laki-laki</option>
+        <option value="P">Perempuan</option>
+      </select>
+      <br><br>
+      <label for="asal">Daerah asal:</label><br>
+      <input type="radio" name="asal" id="jawa"><label for="jawa">Pulau Jawa</label><br>
+      <input type="radio" name="asal" id="luar"><label for="luar">Luar Pulau Jawa</label>
+      <br><br>
+      <label for="tempat">Kebersediaan bekerja:</label><br>
+      <input type="checkbox" name="tempat" id="lap"><label for="lap">Lapangan</label><br>
+      <input type="checkbox" name="tempat" id="kan"><label for="kan">Kantor</label>
+      <br><br>
+      <label for="foto">Silahkan unggah foto dengan pakaian formal:</label><br><br>
+      <input id="file" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" name="foto" type="file">
+      <br><br>
+      <label for="visi">Visi misi:</label><br>
+      <textarea name="visi" id="visi" cols="30" rows="10">Jika saya terpilih maka</textarea>
+      <br><br>
+      <input type="submit" value="submit">
+     </fieldset>
+    </form>
+    
+    </body>
+</html>
