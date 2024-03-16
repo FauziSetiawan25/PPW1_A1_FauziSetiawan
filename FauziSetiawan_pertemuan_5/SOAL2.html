@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOAL2</title>
+    <style>
+    header h1{
+        background-position: 0 0;
+        width: 100%;
+        height: 100px;
+        color: #f9f9f9;
+        background-image: url("OIP.jpg");
+    }
+    .navbar { 
+        background-position: center;
+        overflow: hidden; 
+        background-color: #333; 
+    }
+    .navbar a { 
+        float: left; 
+        font-size: 16px; 
+        color: white; 
+        text-align: center; 
+        padding: 14px 16px; 
+        text-decoration: none; 
+    }
+    .dropdown { 
+        float: left; 
+        overflow: hidden; 
+    }
+    .dropdown .dropbtn { 
+        font-size: 16px; 
+        border: none; 
+        outline: none; 
+        color: white; 
+        padding: 14px 16px; 
+        background-color: inherit; 
+        font-family: inherit; 
+        margin: 0; 
+    }
+    .navbar a:hover, .dropdown:hover .dropbtn { 
+        background-color: red; 
+    }
+    .dropdown-content { 
+        display: none; 
+        position: absolute; 
+        background-color: #f9f9f9; 
+        min-width: 160px; 
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+        z-index: 1; 
+    }
+    .dropdown-content a { 
+        float: none; 
+        color: black; 
+        padding: 12px 16px; 
+        text-decoration: none;
+        display: block; 
+        text-align: left; 
+    }
+    .dropdown-content a:hover { 
+        background-color: #ddd; 
+    }
+    .dropdown:hover .dropdown-content { 
+        display: block; 
+    }
+    main{
+        margin: 0;
+        padding: 5px;
+        width:66%;
+        float:left;
+        background-color: #ddd;
+    }
+    article{
+        margin: 10px;
+        padding: 5px;
+    }
+    .a1{
+        background-color: aqua;
+    }
+    .a2{
+        background-color: greenyellow;
+    }
+    aside{
+        background-color: bisque;
+        width:31%;
+        padding-left: 10px;
+        margin-left: 15px;
+        float:right;
+    }
+    </style>
+    <header align="center">
+        <h1>BAHASA</h1>    
+    </header>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <div class="dropdown">
+            <button class="dropbtn">CONTACT</button>   
+            <div class="dropdown-content">
+                <a href="#">Instagram</a>
+                <a href="#">Line</a>
+                <a href="#">Whatsapp</a>
+            </div> 
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h1>Jenis-jenis bahasa pemrograman</h1>
+            <article class="a1">
+                <h1>JavaScript</h1>
+                <p>
+                    JavaScript adalah bahasa program yang dipakai untuk mengembangkan website dari segi klien (client side). JavaScript merupakan salah satu bahasa tertua di dunia, karena sudah dikembangkan sejak tahun 1995.</p>
+                <p>
+                    JavaScript memungkinkan programmer menambahkan fitur-fitur kompleks sehingga halaman website jadi lebih dinamis dan interaktif. Contohnya untuk membuat pop up notifikasi, pesan konfirmasi, bahkan games sederhana di halaman web.</p>
+                <p>                    
+                    Bahkan, kemampuan JavaScript semakin meningkat berkat adanya Node.js, sebuah runtime environment. Jadinya, JavaScript kini tidak hanya dipakai untuk membangun website dinamis. Ia juga dimanfaatkan dalam pengembangan server, aplikasi mobile, animasi grafis, games, dan masih banyak lagi.
+                </p>
+            </article>
+            <article class="a2">
+                <h1>Python</h1>
+                <p>
+                    Bahasa pemrograman Python adalah bahasa pemograman open source populer yang cukup mudah dipahami pemula. Sama seperti JavaScript, Python sudah ada sejak dekade 90-an, tepatnya di tahun 1991.</p>
+                <p>
+                    Bahasa Python sering disebut sebagai bahasa multiguna, karena bisa dipakai untuk berbagai jenis sistem. Tapi kebanyakan, Python dipakai untuk membangun Machine Learning, Artificial Intelligence, Big Data, dan Robotika.
+                </p>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <h1>Artikel Terbaru</h1>
+        <ul>
+            <li><a href="#">Web 1</a></li>
+            <li><a href="#">Web 2</a></li>
+            <li><a href="#">Web 3</a></li>
+            
+            
+        </ul>
+    </aside>
+    <footer style="clear: both; padding-top: 1em;" align="center">
+        Copyright &copy; 2024 by F.S.
+      </footer>
+</body>
+</html>
